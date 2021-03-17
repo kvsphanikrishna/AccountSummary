@@ -92,6 +92,7 @@ public class AccountSummaryApplication {
 
     /**
      * Get the transactions list by processing the transactions csv file.
+     * Using OpenCsv library to process the CSV file to java POJO's.
      */
     private static List<Transaction> getAllTransactions() {
         try(FileReader fileReader = new FileReader(TRANSACTIONS_CSV_PATH)) {
